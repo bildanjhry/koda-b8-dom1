@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-seri    f;
+    background-color: rgb(255, 255, 254);
+}
+
+body > div {
+    width: 70%;
+    display: flex;
+    margin-top: 2rem;
+    height: fit-content;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 80%;
+    display: flex;
+}
+
+form > input {
+    width: 70%;
+    padding-left: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    height: 3rem;
+}
+
+form > button {
+    width: 30%;
+    border-top-right-radius: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    border-bottom-right-radius: 10px;
+}
+
+.table-data {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.table-data > table {
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+    border-collapse: collapse;
+    border: none;
+}
+
+.table-data > table > thead {
+    background-color: rgb(193, 223, 131);
+}
+
+.table-data > table > thead > tr > th,
+.table-data > table > tbody > tr > td {
+    text-align: center;
+    height: 3rem;
+}
+
+.table-data > table > tbody > tr > td {
+    border-bottom: 1px solid rgb(171, 171, 171);
+}

@@ -3,33 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Celsius to Fahrenheit</h1>
-    <form action="" id="form">
-        <label for="calc">Input celsius value</label>
-        <br>
-        <input type="number" name="calc" id="calc" value="">
-        <button type="submit">
-            Convert
-        </button>
-    </form>
-
-    <p>Result: <span class="result"></span></p>
+    <div>
+        <form action="" id="form">
+            <br>
+            <input 
+            placeholder="Input Celsius Value"
+            type="number" name="calc" id="calc" value="">
+            <button type="submit">
+                Convert
+            </button>
+        </form>
+        <div class="table-data">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Celsius</th>
+                        <th>Fahrenheit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <script type="text/javascript">
         function calc(val){
             return (val * 9/5) + 32
         }
-
-        document.getElementById("form").addEventListener('submit', function(event){
-            event.preventDefault()
-            const form = new FormData(event.target)
-            const value = form.get('calc')
-            document.querySelector(".result").textContent = `${calc(parseInt(value)).toString()}F`
-        })
+        // document.getElementById("form").addEventListener('submit', function(event){
+        //     event.preventDefault()
+        //     const form = new FormData(event.target)
+        //     const value = form.get('calc')
+        //     document.querySelector(".result").textContent = `${calc(parseInt(value)).toString()}F`
+        // })
 
     </script>
+    <script src="main.js"></script>
 </body>
 </html>
